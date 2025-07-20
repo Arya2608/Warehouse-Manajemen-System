@@ -11,35 +11,40 @@ Sistem API untuk manajemen inventaris gudang berbasis Laravel dengan autentikasi
 ```bash
 git clone https://github.com/username/repo-inventaris.git
 cd repo-inventaris
-
+```
 ### 2. Install Dependencies (Composer)
+```bash
 composer install
 composer require tymon/jwt-auth
-
+```
 ### 3. Setup JWT Authentication
+```bash
 php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
 php artisan jwt:secret
-
+```
 ### 4. Konfigurasi .env
+```bash
 cp .env.example .env
 php artisan key:generate
-
+```
 ### Sesuaikan konfigurasi database di file .env:
-
+```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=wms
 DB_USERNAME=root
 DB_PASSWORD=
-
+```
 ### 5. Setup Database
+```bash
 php artisan migrate
 php artisan db:seed
-
+```
 ### 6. Jalankan Server
+```bash
 php artisan serve
-
+```
 ### Server akan berjalan di:
 http://localhost:8000
 
