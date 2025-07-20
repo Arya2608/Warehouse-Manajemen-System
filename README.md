@@ -48,7 +48,47 @@ php artisan serve
 ### Server akan berjalan di:
 http://localhost:8000
 
+### Akun Uji Coba
+Admin
+Email: admin@example.com
+Password: password
 
+### API Endpoint
+Base URL: http://localhost:8000/api
+
+### 🔐 Autentikasi
+POST /login - Login pengguna (mendapatkan token)
+
+POST /register - Registrasi pengguna baru
+
+POST /logout - Logout
+
+### 👤 User
+GET /users - Melihat daftar user (admin)
+
+POST /users - Tambah user baru
+
+### 📦 Produk & Kategori
+GET /products - Lihat semua produk
+
+POST /products - Tambah produk baru
+
+GET /categories - Lihat semua kategori
+
+POST /categories - Tambah kategori baru
+
+### 🏬 Gudang
+GET /warehouses - Lihat daftar gudang
+
+POST /warehouses - Tambah gudang baru
+
+### 📊 Inventaris
+GET /inventories - Lihat stok produk di gudang
+
+### 🔁 Pergerakan Stok
+GET /stock-movements - Lihat histori pergerakan stok
+
+POST /stock-movements - Tambah pergerakan stok (in, out, transfer)
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
